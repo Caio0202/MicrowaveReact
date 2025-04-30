@@ -1,0 +1,144 @@
+.timer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .timer-wrapper input {
+    padding: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    background: #94A07C;
+    color: black;
+    border: 3px inset #333;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 200px;
+  }
+
+  .visor-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .visor-textarea {
+    width: 100%;
+    height:11rem;
+    resize: none;
+    overflow-y: auto;
+    background: #94A07C;
+    color: black;
+    border: 3px inset #333;
+    font-family: monospace;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+  }
+
+  input.disabled {
+    opacity: 0.6;
+  }
+
+  .numpad {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0.4rem;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .numpad button {
+    width: 75px;
+    height: 42px;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    color:black;
+    background-color: #949899;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .numpad button:hover {
+    background-color: #333357;
+    transform: scale(1.05);
+  }
+  
+  .numpad button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .power-control-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .power-control-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .power-label {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .power-input {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    color:black;
+    background-color: #949899;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+
+  .mode-section-inline {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom:0.7rem;
+    color: black;
+    font-family: monospace;
+  }
+  
+  .mode-section-inline label {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .mode-section-inline select {
+    background: #94A07C;
+    color: black;
+    border: 3px inset #333;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    flex: 1;
+  }
+
+  .mode-section-inline select option:nth-child(n+7) {
+    font-style: italic;
+  }
+
+  .mode-section-inline select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }

@@ -1,0 +1,109 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .bg-container {
+    height: 100vh;
+    background: url("https://imgcdn.stablediffusionweb.com/2024/9/6/335a1496-470c-4dc6-a3b5-83f91cca7a6e.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* Optional: dark overlay for better contrast */
+  .bg-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  .login-container {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 360px;
+  }
+  
+  .login-form h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    background-color: #ffffff;
+    color: #1e3c72;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #e0e0e0;
+  }
+
+  .error-message {
+    background-color: #ffe5e5;
+    color: #b30000;
+    border: 1px solid #ff9999;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .create-account-link {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .create-account-link:hover {
+    color: #cce6ff;
+  }
+  
+  .info-message {
+    background-color: #e0f7e9;
+    color: #00793a;
+    border: 1px solid #a2e0b4;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+  }

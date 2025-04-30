@@ -1,0 +1,110 @@
+  /* Left 80% block with background image */
+  .container_dashboard {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .left-block-microondas {
+    width: 75%;
+    height: 100vh;
+    float: left;
+    background: url("../../../public/imgs/microondas_fechado.png") no-repeat center center;
+    background-size: cover;
+  }
+  
+  /* Right 20% block with input and grid */
+  .right-block-microondas {
+    width: 25%;
+    height: 100vh;
+    float: left;
+    background-color: #E3E3E3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .finished-background {
+    width: 100%;
+    height: 100%;
+    background: url("../../../public/imgs/microondas_aberto.png")
+      no-repeat center center;
+    background-size: cover;
+    transition: background-image 0.5s ease;
+  }
+  
+  .change-modo-btn {
+    display: inline-block;
+    background: #949899;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+    transition: background 0.2s ease;
+    font-size: 1rem;
+  }
+  
+  .change-modo-btn:hover {
+    background-color: #7f8385;;
+  }
+
+  .return-btn {
+    background: #0056b3; /* Bootstrap-style blue */
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    max-width: 200px;
+    text-align: center;
+    transition: background 0.2s ease;
+    font-size: 1rem;
+  }
+  
+  .return-btn:hover {
+    background-color: #003d80; /* Darker blue on hover */
+  }
+
+
+  .bottom-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: auto; /* Pushes the controls to the bottom */
+  }
+
+  .modo-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Or 100vh if it should take the full screen */
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-block-microondas, .right-block-microondas {
+      flex: unset;
+      width: 100%;
+      height: 50vh;
+    }
+  
+    .right-block-microondas {
+      height: auto;
+    }
+  }
